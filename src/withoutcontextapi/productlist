@@ -1,0 +1,17 @@
+// import React from "react";
+// import Bikes from "./bikes";
+// const ProductList=(props)=> (
+
+//     <div className='product-list'>
+//         <h2>Product List</h2>
+        
+//         <Bikes
+//             motorcycles={props.motorcycles} 
+//             incrementBikePrice={props.incrementBikePrice}
+//             decrementBikePrice={props.decrementBikePrice}/>            
+        
+//     </div>
+
+// )
+// export default ProductList;
+

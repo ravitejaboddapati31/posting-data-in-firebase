@@ -1,0 +1,39 @@
+import React, {Component} from 'react';
+import ProductList from './productlist';
+
+class WithoutApi extends Component{
+    state={
+       motorcycles: {
+           mc001:{name:'vitpilen',price:250000 },
+           mc002:{name:"himalayan RE",price:300000},
+           mc003:{name:"KTM", price:22500},
+           mc004:{name:"BMW",price: 400000}
+           
+        }
+    }
+
+    incrementBikePrice=this.incrementBikePrice.bind(this);
+    decrementBikePrice=this.decrementBikePrice.bind(this);
+
+    incrementBikePrice(selectedID){
+        const motorcycles=Object.assign({},this.state.motorcycles)
+        motorcycles[selectedID].price=motorcycles[selectedID].price+10000;
+        this.setState({motorcycles})
+    }
+    decrementBikePrice(selectedID){
+        const motorcycles=Object.assign({},this.state.motorcycles)
+        motorcycles[selectedID].price=motorcycles[selectedID].price-10000;
+        this.setState({motorcycles})
+    }
+    render(){
+        return(
+                <div>
+                <ProductList motorcycles={this.state.cars} 
+                incrementBikeprice={this.incrementBikeprice}
+                decrementBikePrice={this.decrementBikePrice}/>
+                  </div>
+
+        )
+    }
+}
+export default WithoutApi;

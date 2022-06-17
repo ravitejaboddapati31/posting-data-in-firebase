@@ -1,0 +1,20 @@
+// import React from 'react';
+// import Bike from './bike';
+// const Bikes =(props)=> (
+
+//     <React.Fragment>
+
+//     <h2>Bikes:</h2>
+//     {Object.keys(props.motorcycles).map(bikeID=>(
+//         <Bike key={bikeID}
+//         name={props.motorcycles[bikeID].name}
+//         price={props.motorcycles[bikeID].price}
+//         incrementPrice={()=>
+//             props.incrementBikePrice(bikeID)}
+//             decrementPrice={()=>
+//             props.decrementBikePrice(bikeID)}/>
+            
+//     ))}
+//     <React.Fragment/>
+// )
+// export default Bikes;
